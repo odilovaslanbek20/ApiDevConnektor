@@ -34,7 +34,7 @@ export default function Developer() {
         <div className="w-[100%] max-w-4xl mx-auto p-4 mt-[55px]">
           <Link
             className="inline-block px-4 py-2 mt-[30px] mb-[15px] bg-white text-black shadow rounded-lg transition"
-            to="/profile"
+            to="/developer"
           >
             Back To Profiles
           </Link>

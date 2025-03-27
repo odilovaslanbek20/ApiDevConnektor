@@ -73,7 +73,7 @@ export default function Developer() {
                       </div>
 
                       <Link
-                        to={`/profile/${dev.user?._id}`}
+                        to={`/developer/${dev.user?._id}`}
                         className="mt-4 px-6 py-2 bg-[#17a2b8] text-white rounded-lg shadow hover:bg-[#138496] transition"
                       >
                         View Profile

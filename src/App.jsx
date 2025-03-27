@@ -60,12 +60,14 @@ function App() {
           <Route index element={<Home />} />
           <Route path='signUp' element={<SignUp />} />
           <Route path='signIn' element={<SignIn />} />
-          <Route path='profile' element={<Developer />} />
-          <Route path='profile/:id' element={<User />} />
           <Route path='createProfile' element={<CreateProfile />} />
           
-          {/* Posts uchun nested route */}
-          <Route path='posts' element={<PostsLayout />}>
+          <Route path='developer' element={<PostsLayout />}>
+            <Route index element={<Developer />} />
+            <Route path=':id' element={<User />} />
+          </Route>
+
+					<Route path='posts' element={<PostsLayout />}>
             <Route index element={<Posts />} />
             <Route path=':id' element={<PostsDetails />} />
           </Route>

@@ -45,7 +45,7 @@ useEffect(() => {
              max-[720px]:backdrop-blur-lg max-[720px]:backdrop-opacity-90 max-[400px]:w-[90%]`}
           >
             <li onClick={handleClick} className="text-white">
-              <Link to="/profile">Developer</Link>
+              <Link to="/developer">Developer</Link>
             </li>
 
             {token ? (
