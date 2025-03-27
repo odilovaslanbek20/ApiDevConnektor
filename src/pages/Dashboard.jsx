@@ -19,7 +19,7 @@ export default function Dashboard() {
       
       <div className="flex justify-center mt-6">
         <Link
-          to="/createProfile"
+          to="/dashboard/createProfile"
           className="px-4 sm:px-6 py-2 bg-[#17a2b8] text-white font-medium text-sm sm:text-lg rounded-lg shadow-md hover:bg-[#138496] transition duration-300"
         >
           Create Profile

@@ -60,9 +60,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path='signUp' element={<SignUp />} />
           <Route path='signIn' element={<SignIn />} />
-          <Route path='createProfile' element={<CreateProfile />} />
           
-          <Route path='developer' element={<PostsLayout />}>
+          <Route path='profile' element={<PostsLayout />}>
             <Route index element={<Developer />} />
             <Route path=':id' element={<User />} />
           </Route>
@@ -70,6 +69,11 @@ function App() {
 					<Route path='posts' element={<PostsLayout />}>
             <Route index element={<Posts />} />
             <Route path=':id' element={<PostsDetails />} />
+          </Route>
+
+					<Route path='dashboard' element={<PostsLayout />}>
+						<Route index element={<Dashboard />} />
+						<Route path=':id' element={<CreateProfile />} />
           </Route>
 
           <Route element={<ProtectsRoute />}>
